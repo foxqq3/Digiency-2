@@ -1,0 +1,5 @@
+//font-size
+@mixin font-size($value) {
+    $value: map-get($font-size, $value);
+    font-size: $value;
+}

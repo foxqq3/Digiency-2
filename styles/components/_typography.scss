@@ -1,0 +1,20 @@
+.h1 {
+    @include font-size ("xxlarge");
+    font-weight: 600;
+    line-height: 1.25em;
+    color: map-get($colors , "mine-shaft" );
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+
+    .h1 {
+        @include font-size ("xxxlarge");
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+
+    .h1 {
+        @include font-size ("huge");
+    }
+}

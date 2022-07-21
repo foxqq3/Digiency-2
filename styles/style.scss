@@ -1,2 +1,36 @@
-@import 'normalize.scss';
-// @import 'nullstyle.scss';
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+//variables
+@import "variables.scss";
+
+//functions
+@import "functions/_functions.scss";
+
+//mixins
+@import "mixins/_mixins.scss";
+
+//placeholgers
+@import "placeholders/_placeholders.scss";
+
+//base
+@import "normalize.scss";
+@import "dop-null.scss";
+
+//utilits
+@import "utilits/_text-color-changer";
+@import "utilits/_container.scss";
+
+//components
+@import "components/_typography.scss";
+@import "components/_btn.scss";
+@import "components/_logo.scss";
+@import "components/_img-icon.scss";
+
+//layouts
+@import "layouts/header.scss";
+@import "layouts/_main.scss";
+
+//helpers
+@import "helpers/_hide.scss";
+@import "helpers/_border.scss";

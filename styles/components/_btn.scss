@@ -1,0 +1,12 @@
+.btn {
+    @include font-size("large");
+    display: inline-flex;
+    padding: spacing(3) spacing(5);
+    font-family: inherit;
+    font-weight: 500;
+    color: map-get($colors, "white");
+    background-color: map-get($colors, "international-orange");
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(4px 5px 8px map-get($colors, "international-orange-40"));
+}

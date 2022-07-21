@@ -1,0 +1,21 @@
+.logo {
+    @include font-size("xlarge");
+    font-weight: 500;
+    color: map-get($colors, "mine-shaft");
+    line-height: 1.25em;
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .logo {
+        @include font-size("large");
+        font-weight: 600;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .logo {
+        @include font-size("xxxlarge");
+        font-weight: 600;
+    }
+}
+

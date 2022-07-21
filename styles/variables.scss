@@ -1,0 +1,38 @@
+//Breakpoints
+$breakpoint: (
+    "medium": 768px,
+    "large": 1440px,
+);
+
+// Colors
+$colors: (
+    "international-orange": #ff5300,
+    "sauvignon": #FFF7F4,
+    "mine-shaft": #373737,
+    "boulder": #7b7b7b,
+    "white": #ffffff,
+    "black-10": rgba(0, 0, 0, 0.1),
+    "international-orange-40": rgba(255, 83, 0, 0.4),
+
+);
+
+//Spacing
+$spacing-default-ratio: 4px;
+
+//fonts
+$font-family: (
+    "main": (
+        "Work Sans",
+        sans-serif,
+    ),
+);
+
+$font-size: (
+    "small": 12px,
+    "medium": 16px,
+    "large": 20px,
+    "xlarge": 25px,
+    "xxlarge": 32px,
+    "xxxlarge": 40px,
+    "huge": 48px,
+);
