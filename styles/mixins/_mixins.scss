@@ -19,4 +19,11 @@
     word-wrap: normal;
   }
 
+//dark theme
+  @mixin dark-theme() {
+    .dark-theme & {
+      @content;
+    }
+  }
+
   
