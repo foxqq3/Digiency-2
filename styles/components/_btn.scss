@@ -8,5 +8,17 @@
     background-color: map-get($colors, "international-orange");
     border: none;
     border-radius: 5px;
-    filter: drop-shadow(4px 5px 8px map-get($colors, "international-orange-40"));
+    transition: all 0.15ms;
+    &:hover {
+        background-color: map-get($colors, "crusta");
+    }
+
+    &:focus {
+        filter: drop-shadow(4px 5px 8px rgba(map-get($colors, "international-orange"),0.4));
+    }
+
+    &:active {
+        background-color: map-get($colors, "sorbus");
+    }
 }
+

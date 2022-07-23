@@ -1,8 +1,16 @@
 .header {
-    display: flex;
-    padding: spacing(3) spacing(4);
+    &__body {
+        display: flex;
+        padding: spacing(3) spacing(4);
+        @include container-default();
+    }
+
     &__logo {
         flex-basis: 33%;
+    }
+
+    &__menu {
+        display: none;
     }
 
     &__theme-switcher {
@@ -22,13 +30,24 @@
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .header {
-        padding: spacing(7) spacing(10);
+        position: relative;
+        z-index: 2;
+        box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+
+        &__body {
+            padding: spacing(7) spacing(10);
+        }
+
         &__logo {
             flex-basis: auto;
             margin-right: spacing(7);
         }
 
         &__menu {
+            display: flex;
+        }
+
+        &__menu-body {
             display: flex;
             align-items: center;
             padding: 0;
@@ -39,25 +58,32 @@
             margin-right: spacing(6);
             line-height: 1.25em;
             color: map-get($colors, "mine-shaft");
+            &:hover {
+                color: map-get($colors, "atomic-tangerine");
+            }
         }
-
         &__theme-switcher {
             flex-basis: auto;
             margin-left: auto;
+        }
+        &__burger-menu {
+            display: none;
         }
     }
 }
 
 @media (min-width: map-get($breakpoint,"large")) {
     .header {
-        padding: spacing(7) spacing(34);
+        &__body {
+            padding: spacing(7) spacing(34);
+        }
+
         &__logo {
             margin-right: spacing(19);
         }
+
         &__menu-item {
             margin-right: spacing(9);
-        }
-        &__menu-item {
             @include font-size("large");
             font-weight: 500;
         }

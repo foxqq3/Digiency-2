@@ -1,8 +1,12 @@
 .main-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: spacing(12) spacing(5);
+    background-color: map-get($colors, "sauvignon");
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: spacing(12) spacing(5);
+        @include container-default;
+    }
 
     &__img {
         max-width: 100%;
@@ -25,6 +29,10 @@
         text-align: center;
     }
 
+    &__description-add {
+        display: none;
+    }
+
     &__btn {
         margin-top: spacing(6);
     }
@@ -32,9 +40,11 @@
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .main-preview {
-        flex-direction: row;
-        gap: spacing(5);
-        padding: spacing(18) spacing(10);
+        &__body {
+            flex-direction: row;
+            gap: spacing(5);
+            padding: spacing(18) spacing(10);
+        }
         &__img-container {
             flex-basis: 50%;
             order: 1;
@@ -58,9 +68,11 @@
 
 @media (min-width: map-get($breakpoint,"large")) {
     .main-preview {
-        gap: spacing(5);
-        padding: spacing(38) spacing(34);
-        gap: spacing(9);
+        &__body {
+            gap: spacing(5);
+            padding: spacing(38) spacing(34);
+            gap: spacing(9);
+        }
         &__img-container {
             flex-basis: auto;
             order: 1;
@@ -76,6 +88,10 @@
             max-width: none;
             width: 490px;
             text-align: left;
+        }
+
+        &__description-add {
+            display: inline;
         }
         &__btn {
             margin-top: spacing(12);

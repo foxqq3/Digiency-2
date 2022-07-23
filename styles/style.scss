@@ -10,16 +10,12 @@
 //mixins
 @import "mixins/_mixins.scss";
 
-//placeholgers
-@import "placeholders/_placeholders.scss";
-
 //base
 @import "normalize.scss";
 @import "dop-null.scss";
 
 //utilits
 @import "utilits/_text-color-changer";
-@import "utilits/_container.scss";
 
 //components
 @import "components/_typography.scss";
@@ -28,8 +24,9 @@
 @import "components/_img-icon.scss";
 
 //layouts
-@import "layouts/header.scss";
-@import "layouts/_main.scss";
+@import "layouts/_header.scss";
+@import "layouts/_main-preview.scss";
+@import "layouts/_about-us.scss";
 
 //helpers
 @import "helpers/_hide.scss";
