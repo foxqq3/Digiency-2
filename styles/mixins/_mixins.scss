@@ -1,29 +1,27 @@
 //font-size
 @mixin font-size($value) {
-    $value: map-get($font-size, $value);
-    font-size: $value;
+  $value: map-get($font-size, $value);
+  font-size: $value;
 }
 
-//container 
-@mixin container-default () {
-    max-width: 1440px;
-    margin: 0 auto;
+//container
+@mixin container-default() {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 //
 @mixin text-ellipsis($maxWidth: 100%) {
-    max-width: $maxWidth;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: normal;
-  }
+  max-width: $maxWidth;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
 
 //dark theme
-  @mixin dark-theme() {
-    .dark-theme & {
-      @content;
-    }
+@mixin dark-theme() {
+  .dark-theme & {
+    @content;
   }
-
-  
+}

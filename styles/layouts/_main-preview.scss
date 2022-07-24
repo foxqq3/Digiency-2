@@ -1,11 +1,11 @@
 .main-preview {
     background-color: map-get($colors, "sauvignon");
     &__body {
+        @include container-default;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: spacing(12) spacing(5);
-        @include container-default;
     }
 
     &__img {
@@ -27,10 +27,9 @@
     &__description {
         margin: spacing(4) 0 0;
         text-align: center;
-    }
-
-    &__description-add {
-        display: none;
+        &-add {
+            display: none;
+        }
     }
 
     &__btn {

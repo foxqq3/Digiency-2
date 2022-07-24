@@ -1,5 +1,6 @@
 .btn {
     @include font-size("large");
+    @include text-ellipsis();
     display: inline-flex;
     padding: spacing(3) spacing(5);
     font-family: inherit;

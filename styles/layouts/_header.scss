@@ -1,12 +1,20 @@
 .header {
     &__body {
+        @include container-default();
         display: flex;
         padding: spacing(3) spacing(4);
-        @include container-default();
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
         flex-basis: 33%;
+        &-link {
+            display: flex;
+        }
+        &-img {
+            height: 24px;
+        }
     }
 
     &__menu {
@@ -18,6 +26,11 @@
         align-items: center;
         justify-content: center;
         flex-basis: 33%;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
     }
 
     &__burger-menu {
@@ -41,6 +54,10 @@
         &__logo {
             flex-basis: auto;
             margin-right: spacing(7);
+
+            &-img {
+                height: 20px;
+            }
         }
 
         &__menu {
@@ -80,6 +97,9 @@
 
         &__logo {
             margin-right: spacing(19);
+            &-img {
+                height: 36px;
+            }
         }
 
         &__menu-item {

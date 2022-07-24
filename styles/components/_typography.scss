@@ -5,10 +5,22 @@
     color: map-get($colors , "mine-shaft" );
 }
 
+.h2 {
+    @include font-size ("xlarge");
+    font-weight: 500;
+    line-height: 1.25em;
+    color: map-get($colors , "mine-shaft" );
+}
+
 @media (min-width: map-get($breakpoint,"medium")) {
 
     .h1 {
         @include font-size ("xxxlarge");
+    }
+
+    .h2 {
+        @include font-size ("xxlarge");
+        font-weight: 600;
     }
 }
 
@@ -17,4 +29,10 @@
     .h1 {
         @include font-size ("huge");
     }
+
+    .h2 {
+        @include font-size ("xxxlarge");
+    }
 }
+
+
