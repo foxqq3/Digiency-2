@@ -1,42 +1,10 @@
 .about-us {
     @include container-default();
     padding: spacing(12) spacing(5);
-    &__first-part {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     &__img {
         max-width: 100%;
         height: auto;
-    }
-
-    &__section-name {
-        margin: spacing(12) 0 0;
-    }
-
-    &__content-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__title {
-        margin: spacing(4) 0 0;
-        text-align: center;
-    }
-
-    &__description {
-        margin: spacing(4) 0 0;
-        text-align: center;
-        &-add {
-            display: none;
-        }
-    }
-
-    &__btn {
-        margin: spacing(6) 0 0;
     }
 
     &__second-part {
@@ -50,62 +18,11 @@
         margin: 0;
         padding: 0;
     }
-
-    &__cards-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: spacing(6) spacing(12) spacing(5);
-        box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
-    }
-
-    &__cards-item-icon {
-        width: 70px;
-        height: 70px;
-    }
-
-    &__cards-item-description {
-        margin: spacing(9) 0 0;
-        font-size: map-get($colors, "large");
-        font-weight: 500;
-        color: map-get($colors, "mine-shaft");
-        text-align: center;
-    }
 }
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .about-us {
         padding: spacing(30) spacing(10);
-        &__first-part {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap: 20px;
-            align-items: flex-end;
-        }
-
-        &__img-container {
-            flex-basis: 50%;
-        }
-
-        &__section-name {
-            order: -1;
-            margin: 0;
-            text-align: center;
-        }
-
-        &__content-container {
-            flex-basis: 50%;
-            align-items: flex-start;
-        }
-
-        &__title {
-            text-align: left;
-        }
-
-        &__description {
-            text-align: left;
-        }
-
         &__second-part {
             margin: spacing(21) 0 0;
         }
@@ -116,37 +33,12 @@
             align-items: stretch;
             gap: 0 spacing(6);
         }
-
-        &__cards-item {
-            flex-basis: 25%;
-            padding: spacing(9) spacing(3) spacing(5);
-        }
-
-        &__cards-item-description {
-            font-weight: 400;
-        }
     }
 }
 
 @media (min-width: map-get($breakpoint,"large")) {
     .about-us {
         padding: spacing(30) spacing(34);
-        &__title {
-            margin-top: spacing(8);
-        }
-
-        &__second-part {
-            margin-top: spacing(15);
-        }
-
-        &__description {
-            &-add {
-                display: inline;
-            }
-        }
-        &__btn {
-            margin-top: spacing(12);
-        }
 
     }
 }
