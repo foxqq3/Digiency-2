@@ -138,6 +138,12 @@
         &__second-part {
             margin-top: spacing(15);
         }
+
+        &__description {
+            &-add {
+                display: inline;
+            }
+        }
         &__btn {
             margin-top: spacing(12);
         }
