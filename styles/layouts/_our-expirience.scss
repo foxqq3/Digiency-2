@@ -43,15 +43,16 @@
                 gap: spacing(2);
                 flex-basis: calc(50% - spacing(1));
 
-                &.-padding-bottom {
+                &:nth-child(1) {
                     padding-bottom: spacing(8);
                 }
-                &.-padding-top {
+
+                &:nth-child(2) {
                     padding-top: spacing(8);
                 }
             }
         }
-
+        
         &__description-add-medium {
             display: inline;
         }
@@ -74,10 +75,11 @@
                 gap: spacing(8);
                 flex-basis: calc(50% - spacing(4));
 
-                &.-padding-bottom {
+                &:nth-child(1) {
                     padding-bottom: spacing(6);
                 }
-                &.-padding-top {
+
+                &:nth-child(2) {
                     padding-top: spacing(6);
                 }
             }

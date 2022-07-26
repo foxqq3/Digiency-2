@@ -1,0 +1,45 @@
+.team-member {
+    @include container-default;
+    padding: spacing(12) spacing(1) spacing(8);
+    &__name {
+        margin: 0;
+        text-align: center;
+    }
+
+    &__title {
+        margin: spacing(2) 0 0;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+        gap: spacing(4);
+        margin: 0;
+        padding: spacing(4);
+        
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .team-member {
+        padding: spacing(30) spacing(6) spacing(26);
+
+        &__cards {
+            justify-content: space-between;
+            gap: spacing(8);
+            margin-top: spacing(11);
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .team-member {
+        padding: spacing(30) spacing(26) spacing(26);
+    }
+}
