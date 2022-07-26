@@ -1,6 +1,6 @@
 body {
-    font-family: map-get($font-family, "main");
     @include font-size ("medium");
+    font-family: map-get($font-family, "main");
     line-height: 1.5em;
     font-weight: 400;
     color: map-get($colors , "boulder" );

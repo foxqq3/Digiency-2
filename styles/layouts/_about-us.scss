@@ -18,6 +18,15 @@
         margin: 0;
         padding: 0;
     }
+
+    &__description-add-medium {
+        display: none;
+    }
+
+    &__description-add-large {
+        display: none;
+    }
+
 }
 
 @media (min-width: map-get($breakpoint,"medium")) {
@@ -39,6 +48,12 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .about-us {
         padding: spacing(30) spacing(34);
+        &__cards {
+            gap: 0 spacing(8);
+        }
 
+        &__description-add-large {
+            display: inline;
+        }
     }
 }

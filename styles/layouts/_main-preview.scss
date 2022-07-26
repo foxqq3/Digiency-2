@@ -41,7 +41,7 @@
     .main-preview {
         &__body {
             flex-direction: row;
-            gap: spacing(5);
+            gap: spacing(6);
             padding: spacing(18) spacing(10);
         }
         &__img-container {
@@ -68,9 +68,8 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .main-preview {
         &__body {
-            gap: spacing(5);
+            gap: spacing(8);
             padding: spacing(38) spacing(34);
-            gap: spacing(9);
         }
         &__img-container {
             flex-basis: auto;

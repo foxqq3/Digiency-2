@@ -1,14 +1,14 @@
 .h1 {
     @include font-size ("xxlarge");
-    font-weight: 600;
     line-height: 1.25em;
+    font-weight: 600;
     color: map-get($colors , "mine-shaft" );
 }
 
 .h2 {
     @include font-size ("xlarge");
-    font-weight: 500;
     line-height: 1.25em;
+    font-weight: 500;
     color: map-get($colors , "mine-shaft" );
 }
 

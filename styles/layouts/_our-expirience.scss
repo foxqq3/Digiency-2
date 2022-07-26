@@ -1,0 +1,90 @@
+.our-experience {
+    background-color: map-get($colors, "sauvignon");
+    &__body {
+        @include container-default;
+        padding: spacing(12) spacing(5);
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: spacing(8) 0;
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: spacing(8) 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__description-add-medium {
+        display: none;
+    }
+
+    &__description-add-large {
+        display: none;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .our-experience {
+        &__body {
+            padding: spacing(15) spacing(10);
+        }
+
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: spacing(2);
+
+            &-container {
+                justify-content: center;
+                gap: spacing(2);
+                flex-basis: calc(50% - spacing(1));
+
+                &.-padding-bottom {
+                    padding-bottom: spacing(8);
+                }
+                &.-padding-top {
+                    padding-top: spacing(8);
+                }
+            }
+        }
+
+        &__description-add-medium {
+            display: inline;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .our-experience {
+        &__body {
+            padding: spacing(21) spacing(34);
+        }
+
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: spacing(8);
+
+            &-container {
+                justify-content: center;
+                gap: spacing(8);
+                flex-basis: calc(50% - spacing(4));
+
+                &.-padding-bottom {
+                    padding-bottom: spacing(6);
+                }
+                &.-padding-top {
+                    padding-top: spacing(6);
+                }
+            }
+        }
+
+        &__description-add-large {
+            display: inline;
+        }
+    }
+}

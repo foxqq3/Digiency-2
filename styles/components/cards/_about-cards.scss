@@ -1,13 +1,15 @@
-.cards-about {
+.about-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: spacing(6) spacing(12) spacing(5);
     box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+
     &__icon {
         width: 70px;
         height: 70px;
     }
+
     &__description {
         margin: spacing(9) 0 0;
         font-size: map-get($colors, "large");
@@ -18,11 +20,16 @@
 }
 
 @media (min-width: map-get($breakpoint,"medium")) {
-    .cards-abot {
-        flex-basis: 25%;
+    .about-cards {
         padding: spacing(9) spacing(3) spacing(5);
+        &.-flex-basis_25 {
+            flex-basis: 25%;
+        }
+        
         &__description {
             font-weight: 400;
         }
     }
 }
+
+

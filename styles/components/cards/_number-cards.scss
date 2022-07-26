@@ -1,0 +1,55 @@
+.number-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: spacing(5);
+    padding: spacing(18) 0;
+    background-color: map-get($colors, "white");
+    box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+    &__title-number {
+        @include font-size("huge");
+        margin: 0;
+        line-height: 1.25em;
+        font-weight: 700;
+        color: map-get($colors, "mine-shaft");
+    }
+
+    &__name {
+        @include font-size("xlarge");
+        margin: 0;
+        line-height: 1.25em;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .number-cards {
+        padding: spacing(11) 0;
+        &__title-number {
+            @include font-size("xlarge");
+            font-weight: 500;
+        }
+        &__name {
+            @include font-size("medium");
+            line-height: 1.5em;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .number-cards {
+        padding: spacing(18) 0;
+
+        &__title-number {
+            @include font-size("huge");
+            font-weight: 700;
+        }
+
+        &__name {
+            @include font-size("large");
+            line-height: 1.25em;
+            font-weight: 500;
+        }
+    }
+}
