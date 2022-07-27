@@ -1,0 +1,100 @@
+.feedback-cards {
+    position: relative;
+    margin-left: spacing(5);
+    padding: spacing(6) spacing(3) spacing(5) spacing(9);
+    background-color: map-get($colors, "international-orange");
+    box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+    &__img {
+        position: absolute;
+        top: spacing(6);
+        left: spacing(-5);
+        width: 48px;
+        height: 48px;
+    }
+    &__person-name {
+        margin: 0;
+        color: map-get($colors, "white");
+    }
+
+    &__job-title {
+        @include font-size("small");
+        margin: spacing(2) 0 0;
+        line-height: 1.25em;
+        color: map-get($colors, "white");
+    }
+
+    &__text {
+        min-width: 180px;
+        margin: spacing(3) 0 0;
+        color: map-get($colors, "white");
+    }
+
+    &__text-add-medium {
+        display: none;
+    }
+
+    &__text-add-large {
+        display: none;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .feedback-cards {
+        margin-left: spacing(6);
+        padding-right: spacing(8);
+
+        &__job-title {
+            margin-top: spacing(3);
+        }
+        &__text {
+            min-width: 180px;
+            margin-top: spacing(4);
+        }
+
+        &__person-name {
+            @include font-size("large");
+            line-height: 1.25em;
+            font-weight: 500;
+        }
+
+        &__text-add-medium {
+            display: inline;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 300ms;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .feedback-cards {
+        margin-left: spacing(10);
+        padding: spacing(8) spacing(9) spacing(6) spacing(16);
+        &__img {
+            top: spacing(6);
+            left: spacing(-10);
+            width: 80px;
+            height: 80px;
+        }
+
+        &__job-title {
+            margin-top: spacing(2);
+        }
+
+        &__text {
+            margin-top: spacing(6);
+        }
+
+        &__person-name {
+            @include font-size("large");
+            line-height: 1.25em;
+            font-weight: 500;
+        }
+
+        &__text-add-large {
+            display: inline;
+        }
+    }
+}

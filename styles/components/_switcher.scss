@@ -1,0 +1,38 @@
+.switcher {
+    display: flex;
+    justify-content: center;
+    gap: spacing(1);
+    &__left-figure {
+        width: 15px;
+        height: 15px;
+        background-color: map-get($colors, "international-orange");
+        border-radius: calc(15px / 2);
+    }
+
+    &__middle-figure {
+        width: 50px;
+        height: 15px;
+        background-color: map-get($colors, "mine-shaft");
+        border-radius: calc(15px / 2);
+    }
+
+    &__right-figure {
+        width: 15px;
+        height: 15px;
+        background-color: map-get($colors, "boulder");
+        border-radius: calc(15px / 2);
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .switcher {
+        &__right-figure,
+        &__middle-figure,
+        &__left-figure {
+            &:hover {
+                transform: scale(1.1);
+                transition: transform 300ms;
+            }
+        }
+    }
+}

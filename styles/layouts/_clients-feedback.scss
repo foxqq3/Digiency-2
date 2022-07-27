@@ -1,0 +1,51 @@
+.clients-feedback {
+    background-color: map-get($colors, "sauvignon");
+    padding: spacing(12) spacing(5);
+    &__body {
+        @include container-default;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: spacing(5);
+        overflow-x: auto;
+        margin: spacing(1) spacing(-5) 0;
+        padding: spacing(4);
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+    &__switcher {
+        margin-top: spacing(2);
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .clients-feedback {
+        padding: spacing(15) spacing(10);
+        &__cards {
+            gap: spacing(13);
+            overflow-x: visible;
+            margin: spacing(15) 0;
+            padding: 0;
+        }
+        &__switcher {
+            margin-top: spacing(15);
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+        .clients-feedback {
+            padding: spacing(15) spacing(34);
+            &__cards {
+                gap: spacing(37);
+                margin-top: spacing(15);
+            }
+            &__switcher {
+                margin-top: spacing(15);
+            }
+    }
+}

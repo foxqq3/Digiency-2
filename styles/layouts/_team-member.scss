@@ -1,15 +1,6 @@
 .team-member {
     @include container-default;
     padding: spacing(12) spacing(1) spacing(8);
-    &__name {
-        margin: 0;
-        text-align: center;
-    }
-
-    &__title {
-        margin: spacing(4) 0 0;
-        text-align: center;
-    }
 
     &__cards {
         display: flex;
@@ -39,8 +30,5 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .team-member {
         padding: spacing(30) spacing(26) spacing(26);
-        &__title {
-            margin-top: spacing(6);
-        }
     }
 }

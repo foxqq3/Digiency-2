@@ -1,0 +1,21 @@
+
+.name-and-title-sample {
+&__name {
+    margin: 0;
+    text-align: center;
+}
+
+&__title {
+    margin: spacing(4) 0 0;
+    text-align: center;
+}
+
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .name-and-title-sample {
+        &__title {
+            margin-top: spacing(6);
+        }
+    }
+}

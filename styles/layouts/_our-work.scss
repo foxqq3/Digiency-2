@@ -1,15 +1,6 @@
 .our-work {
     @include container-default;
     padding: 0 spacing(5) spacing(12);
-    &__name {
-        margin: 0;
-        text-align: center;
-    }
-
-    &__title {
-        margin: spacing(4) 0 0;
-        text-align: center;
-    }
 
     &__filter {
         display: flex;
@@ -64,6 +55,9 @@
 
         &__tiles {
             gap: spacing(8);
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+            }
             &-item {
                 &:hover {
                     transform: scale(1.05);
@@ -77,8 +71,6 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .our-work {
         padding: 0 spacing(30) spacing(34);
-        &__title {
-            margin-top: spacing(6);
-        }
+        
     }
 }
