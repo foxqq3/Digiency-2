@@ -7,16 +7,14 @@
     }
 
     &__title {
-        margin: spacing(2) 0 0;
+        margin: spacing(4) 0 0;
         text-align: center;
     }
 
     &__cards {
         display: flex;
-        flex-wrap: nowrap;
-
-        overflow-x: auto;
         gap: spacing(4);
+        overflow-x: auto;
         margin: 0;
         padding: spacing(4);
         
@@ -41,5 +39,8 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .team-member {
         padding: spacing(30) spacing(26) spacing(26);
+        &__title {
+            margin-top: spacing(6);
+        }
     }
 }

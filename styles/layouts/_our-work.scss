@@ -1,0 +1,84 @@
+.our-work {
+    @include container-default;
+    padding: 0 spacing(5) spacing(12);
+    &__name {
+        margin: 0;
+        text-align: center;
+    }
+
+    &__title {
+        margin: spacing(4) 0 0;
+        text-align: center;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+        gap: spacing(4);
+        overflow-x: auto;
+        margin: spacing(6) 0 0;
+        padding: 0;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &-item {
+            white-space: nowrap;
+            color: map-get($colors, "boulder");
+        }
+    }
+
+    &__materials {
+        display: flex;
+        flex-direction: column;
+        gap: spacing(6);
+        margin-top: spacing(12);
+    }
+
+    &__tiles {
+        display: flex;
+        flex-direction: column;
+        gap: spacing(6);
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .our-work {
+        padding: 0 spacing(10) spacing(30);
+        &__materials {
+            flex-direction: row;
+            gap: spacing(8);
+            margin-top: spacing(12);
+        }
+
+        &__tiles {
+            gap: spacing(8);
+            &-item {
+                &:hover {
+                    transform: scale(1.05);
+                    transition: transform 300ms;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .our-work {
+        padding: 0 spacing(30) spacing(34);
+        &__title {
+            margin-top: spacing(6);
+        }
+    }
+}

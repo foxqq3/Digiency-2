@@ -75,9 +75,6 @@
             margin-right: spacing(6);
             line-height: 1.25em;
             color: map-get($colors, "mine-shaft");
-            &:hover {
-                color: map-get($colors, "atomic-tangerine");
-            }
         }
         &__theme-switcher {
             flex-basis: auto;

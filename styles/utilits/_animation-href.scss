@@ -1,0 +1,8 @@
+.animation-href {
+    &:hover {
+        color: map-get($colors, "atomic-tangerine");
+    }
+    &:active {
+        color: map-get($colors, "international-orange");
+    }
+}
