@@ -5,7 +5,7 @@
     gap: spacing(5);
     padding: spacing(18) 0;
     background-color: map-get($colors, "white");
-    box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+    box-shadow: $default-box-shadow;
     &__title-number {
         @include font-size("huge");
         margin: 0;

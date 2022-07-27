@@ -1,0 +1,16 @@
+.our-blog {
+    @include container-default;
+    padding: spacing(12) spacing(5);
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .our-blog {
+        padding: spacing(30) spacing(10);
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .our-blog {
+        padding: spacing(30) spacing(34);
+    }
+}

@@ -1,0 +1,146 @@
+.bloger-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: spacing(5) spacing(4) spacing(7);
+    box-shadow: $default-box-shadow;
+    &__blog {
+        display: flex;
+        gap: spacing(12);
+
+        &-title {
+            @include font-size("small");
+            margin: 0;
+            line-height: 1.25em;
+            color: map-get($colors, "international-orange");
+        }
+
+        &-fragment {
+            min-width: 170px;
+            margin: spacing(2) 0 0;
+            color: map-get($colors, "mine-shaft");
+        }
+
+        &-img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: spacing(3);
+        margin-top: spacing(4);
+        &-img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        color: map-get($colors, "mine-shaft");
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        gap: spacing(1);
+        margin: 0;
+    }
+
+    &__date {
+        margin: 0;
+        @include font-size("small");
+        line-height: 1.25em;
+    }
+
+    &__dot {
+        width: 5px;
+        height: 5px;
+        border-radius: calc(5px / 2);
+        background-color: map-get($colors, "boulder");
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .bloger-cards {
+        padding: spacing(5) spacing(4) spacing(7);
+        &__blog {
+            gap: spacing(6);
+            &-title {
+                @include font-size("medium");
+                line-height: 1.5em;
+            }
+
+            &-fragment {
+                @include font-size("large");
+                margin-top: spacing(4);
+                line-height: 1.25em;
+                font-weight: 500;
+            }
+
+            &-img {
+                margin-top: spacing(2);
+            }
+        }
+
+        &__person {
+            gap: spacing(4);
+            margin-top: spacing(6);
+
+            &-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        &__name {
+            @include font-size("large");
+            line-height: 1.25em;
+            font-weight: 500;
+        }
+
+        &__status {
+            gap: spacing(3);
+        }
+
+        &__date {
+            margin-top: spacing(2);
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .bloger-cards {
+        padding: spacing(6) spacing(8);
+        &__blog {
+            gap: spacing(11);
+            &-fragment {
+                @include font-size("xlarge");
+                margin: spacing(5) 0 spacing(7);
+            }
+
+            &-img {
+                width: 164px;
+                height: 164px;
+                margin-top: 0;
+            }
+        }
+
+        &__person {
+            gap: spacing(3);
+            margin-top: 0;
+
+            &-img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &__date {
+            @include font-size("medium");
+        }
+    }
+}

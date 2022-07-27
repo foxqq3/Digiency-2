@@ -37,3 +37,6 @@ $font-size: (
     "xxxlarge": 40px,
     "huge": 48px,
 );
+
+//shadow
+$default-box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);

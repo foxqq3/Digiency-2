@@ -1,0 +1,49 @@
+.section-scroll-block-sample {
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: spacing(5);
+        overflow-x: auto;
+        margin: 0 spacing(-5) 0;
+        padding: spacing(5);
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+    &__switcher {
+        margin-top: spacing(1);
+    }
+}
+
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .section-scroll-block-sample {
+        &__cards {
+            gap: spacing(13);
+            overflow-x: visible;
+            margin: spacing(15) 0 0;
+            padding: 0;
+            &.-gap-for-default-cards {
+                gap: spacing(6);
+            }
+        }
+        &__switcher {
+            margin-top: spacing(15);
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .section-scroll-block-sample {
+        &__cards {
+            gap: spacing(37);
+            margin-top: spacing(15);
+            &.-gap-for-default-cards {
+                gap: spacing(8);
+            }
+        }
+        &__switcher {
+            margin-top: spacing(15);
+        }
+    }
+}
