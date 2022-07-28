@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-basis: 50%;
     padding: spacing(5) spacing(4) spacing(7);
+    background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
     &__blog {
         display: flex;

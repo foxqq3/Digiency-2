@@ -22,16 +22,19 @@
 @import "components/_typography.scss";
 @import "components/_btn.scss";
 @import "components/_switcher.scss";
+@import "components/_form-set.scss";
 
 @import "components/cards/_about-cards.scss";
 @import "components/cards/_number-cards.scss";
 @import "components/cards/_employee-cards.scss";
 @import "components/cards/_feedback-cards.scss";
 @import "components/cards/_bloger-cards.scss";
+@import "components/cards/_contact-cards.scss";
 
 @import "components/samples/_section-block-sample.scss";
 @import "components/samples/_name-and-title-sample.scss";
 @import "components/samples/_section-scroll-block-sample.scss";
+@import "components/samples/_send-form-sample.scss";
 
 //layouts
 @import "layouts/_header.scss";
@@ -42,6 +45,8 @@
 @import "layouts/_our-work.scss";
 @import "layouts/_clients-feedback.scss";
 @import "layouts/_our-blog.scss";
+@import "layouts/_contact-us.scss";
+@import "layouts/_footer.scss";
 
 //helpers
 // @import "helpers/_hide.scss";

@@ -1,0 +1,29 @@
+.form-set {
+    min-width: 100px;
+    padding: spacing(5);
+    background-color: map-get($colors, "white");
+    outline:none;
+    border: none;
+    box-shadow: $default-box-shadow;
+    &:focus {
+        border: none;
+        box-shadow: $orange-box-shadow;
+    }
+
+    &.-textarea {
+        height: 170px;
+        resize: none;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .form-set {
+        flex-basis: calc(50% - spacing(calc(5/2)));
+        &.-textarea {
+            flex-basis: 100%;
+            height: 110px;
+        }
+
+    }
+
+}

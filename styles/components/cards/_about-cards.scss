@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: spacing(6) spacing(12) spacing(5);
+    background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
 
     &__icon {

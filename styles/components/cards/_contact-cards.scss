@@ -1,0 +1,117 @@
+.contact-cards {
+    flex-basis: calc(100% / 3);
+    padding: spacing(5) spacing(5) spacing(7);
+    background-color: map-get($colors, "white");
+    box-shadow: $default-box-shadow;
+    &__upper-part-wrapper {
+        display: flex;
+        gap: spacing(5);
+    }
+
+    &__img {
+        width: 75px;
+        height: 75px;
+    }
+
+    &__name {
+        @include font-size("xlarge");
+        margin: 0;
+        line-height: 1.25em;
+        font-weight: 500;
+        color: map-get($colors, "international-orange");
+    }
+
+    &__title {
+        @include font-size("xxlarge");
+        margin: spacing(3) 0 0;
+        line-height: 1.25em;
+        font-weight: 600;
+        color: map-get($colors, "mine-shaft");
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 spacing(5);
+        margin: spacing(9) 0 0;
+        padding: 0;
+    }
+
+    &__info-item {
+        @include font-size("large");
+        line-height: 2em;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .contact-cards {
+        padding: spacing(5) spacing(4);
+
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 300ms;
+        }
+
+        &__upper-part-wrapper {
+            gap: spacing(3);
+        }
+
+        &__img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__name {
+            @include font-size("large");
+        }
+
+        &__title {
+            @include font-size("xlarge");
+            margin-top: 0;
+            font-weight: 500;
+        }
+
+        &__info {
+            margin-top: spacing(6);
+        }
+
+        &__info-item {
+            @include font-size("medium");
+            font-weight: 400;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .contact-cards {
+        padding: spacing(6) spacing(8);
+        &__upper-part-wrapper {
+            gap: spacing(5);
+        }
+
+        &__img {
+            width: 75px;
+            height: 75px;
+        }
+
+        &__name {
+            @include font-size("xlarge");
+        }
+
+        &__title {
+            @include font-size("xxlarge");
+            margin-top: 3;
+            font-weight: 600;
+        }
+
+        &__info {
+            margin-top: spacing(10);
+        }
+
+        &__info-item {
+            @include font-size("large");
+            font-weight: 500;
+        }
+    }
+}

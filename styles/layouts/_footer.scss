@@ -1,0 +1,8 @@
+.footer {
+    padding: spacing(12) spacing(5) 0;
+    background-color: map-get($colors, "mine-shaft");
+    &__logo{
+        display: block;
+    }
+    
+}
