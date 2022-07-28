@@ -21,10 +21,8 @@
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .about-cards {
+        flex-basis: 25%;
         padding: spacing(9) spacing(3) spacing(5);
-        &.-flex-basis_25 {
-            flex-basis: 25%;
-        }
         
         &__description {
             font-weight: 400;

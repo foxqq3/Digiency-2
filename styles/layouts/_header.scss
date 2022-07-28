@@ -9,12 +9,13 @@
         display: flex;
         align-items: center;
         flex-basis: 33%;
-        &-link {
-            display: flex;
-        }
-        &-img {
-            height: 24px;
-        }
+    }
+
+    &__logo-link {
+        display: flex;
+    }
+    &__logo-img {
+        height: 24px;
     }
 
     &__menu {
@@ -54,10 +55,10 @@
         &__logo {
             flex-basis: auto;
             margin-right: spacing(7);
+        }
 
-            &-img {
-                height: 20px;
-            }
+        &__logo-img {
+            height: 20px;
         }
 
         &__menu {
@@ -94,9 +95,10 @@
 
         &__logo {
             margin-right: spacing(19);
-            &-img {
-                height: 36px;
-            }
+        }
+
+        &__logo-img {
+            height: 36px;
         }
 
         &__menu-item {

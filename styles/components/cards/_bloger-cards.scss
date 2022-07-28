@@ -8,24 +8,24 @@
     &__blog {
         display: flex;
         gap: spacing(12);
+    }
 
-        &-title {
-            @include font-size("small");
-            margin: 0;
-            line-height: 1.25em;
-            color: map-get($colors, "international-orange");
-        }
+    &__blog-title {
+        @include font-size("small");
+        margin: 0;
+        line-height: 1.25em;
+        color: map-get($colors, "international-orange");
+    }
 
-        &-fragment {
-            min-width: 170px;
-            margin: spacing(2) 0 0;
-            color: map-get($colors, "mine-shaft");
-        }
+    &__blog-fragment {
+        min-width: 170px;
+        margin: spacing(2) 0 0;
+        color: map-get($colors, "mine-shaft");
+    }
 
-        &-img {
-            width: 80px;
-            height: 80px;
-        }
+    &__blog-img {
+        width: 80px;
+        height: 80px;
     }
 
     &__person {
@@ -33,10 +33,11 @@
         align-items: center;
         gap: spacing(3);
         margin-top: spacing(4);
-        &-img {
-            width: 40px;
-            height: 40px;
-        }
+    }
+
+    &__person-img {
+        width: 40px;
+        height: 40px;
     }
 
     &__name {
@@ -70,31 +71,32 @@
         padding: spacing(5) spacing(4) spacing(7);
         &__blog {
             gap: spacing(6);
-            &-title {
-                @include font-size("medium");
-                line-height: 1.5em;
-            }
+        }
 
-            &-fragment {
-                @include font-size("large");
-                margin-top: spacing(4);
-                line-height: 1.25em;
-                font-weight: 500;
-            }
+        &__blog-title {
+            @include font-size("medium");
+            line-height: 1.5em;
+        }
 
-            &-img {
-                margin-top: spacing(2);
-            }
+        &__blog-fragment {
+            @include font-size("large");
+            margin-top: spacing(4);
+            line-height: 1.25em;
+            font-weight: 500;
+        }
+
+        &__blog-img {
+            margin-top: spacing(2);
         }
 
         &__person {
             gap: spacing(4);
             margin-top: spacing(6);
+        }
 
-            &-img {
-                width: 60px;
-                height: 60px;
-            }
+        &__person-img {
+            width: 60px;
+            height: 60px;
         }
 
         &__name {
@@ -107,7 +109,7 @@
             gap: spacing(3);
             margin-top: spacing(2);
         }
-        
+
         &:hover {
             transform: scale(1.05);
             transition: transform 300ms;
@@ -120,26 +122,27 @@
         padding: spacing(6) spacing(8);
         &__blog {
             gap: spacing(8);
-            &-fragment {
-                @include font-size("xlarge");
-                margin: spacing(5) 0 spacing(7);
-            }
+        }
 
-            &-img {
-                width: 164px;
-                height: 164px;
-                margin-top: 0;
-            }
+        &__blog-fragment {
+            @include font-size("xlarge");
+            margin: spacing(5) 0 spacing(7);
+        }
+
+        &__blog-img {
+            width: 164px;
+            height: 164px;
+            margin-top: 0;
         }
 
         &__person {
             gap: spacing(3);
             margin-top: 0;
+        }
 
-            &-img {
-                width: 80px;
-                height: 80px;
-            }
+        &__person-img {
+            width: 80px;
+            height: 80px;
         }
 
         &__date {

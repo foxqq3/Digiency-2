@@ -12,10 +12,11 @@
         &::-webkit-scrollbar {
             width: 0;
         }
-        &-item {
-            white-space: nowrap;
-            color: map-get($colors, "boulder");
-        }
+    }
+
+    &__filter-item {
+        white-space: nowrap;
+        color: map-get($colors, "boulder");
     }
 
     &__materials {
@@ -31,16 +32,16 @@
         gap: spacing(6);
         margin: 0;
         padding: 0;
+    }
 
-        &-item {
-            box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
-        }
+    &__tiles-item {
+        box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+    }
 
-        &-img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
+    &__tiles-img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -58,11 +59,12 @@
             &:nth-child(2) {
                 flex-direction: column-reverse;
             }
-            &-item {
-                &:hover {
-                    transform: scale(1.05);
-                    transition: transform 300ms;
-                }
+        }
+
+        &__tiles-item {
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 300ms;
             }
         }
     }
@@ -71,6 +73,5 @@
 @media (min-width: map-get($breakpoint,"large")) {
     .our-work {
         padding: 0 spacing(30) spacing(34);
-        
     }
 }
