@@ -1,0 +1,46 @@
+.email-sender {
+    display: flex;
+    &__input-email {
+        width: 100%;
+        height: 60px;
+        padding-left: spacing(5);
+        border: 1px solid map-get($colors, "international-orange");
+        background-color: map-get($colors, "mine-shaft");
+    }
+
+    &__img {
+        width: auto;
+        height: 60px;
+    }
+}
+
+@media (min-width: map-get($breakpoint,"medium")) {
+    .email-sender {
+        @include font-size("small");
+        line-height: 1.25em;
+
+        &__input-email {
+            height: 35px;
+            padding-left: spacing(1);
+        }
+        &__img {
+            height: 35px;
+        }
+    }
+}
+
+@media (min-width: map-get($breakpoint,"large")) {
+    .email-sender {
+        @include font-size("medium");
+        line-height: 1.5em;
+
+        &__input-email {
+            height: 60px;
+            padding-left: spacing(5);
+        }
+        &__img {
+            height: 60px;
+        }
+
+    }
+}
