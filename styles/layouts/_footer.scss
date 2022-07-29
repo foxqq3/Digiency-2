@@ -1,9 +1,12 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    gap: spacing(12);
-    padding: spacing(12) spacing(5) 0;
     background-color: map-get($colors, "mine-shaft");
+    &__body {
+        @include container-default;
+        display: flex;
+        flex-direction: column;
+        gap: spacing(12);
+        padding: spacing(12) spacing(5) 0;
+    }
 
     &__text-part {
         display: flex;
@@ -61,13 +64,17 @@
         color: map-get($colors, "white");
     }
 
-    &__copyright {
+    &__copyright{
+        background-color: map-get($colors, "international-orange");
+    }
+
+    &__copyright-body {
+        @include container-default;
         display: flex;
         align-items: center;
         gap: spacing(2);
-        margin: 0 spacing(-5);
+        margin-top: spacing(11);
         padding: spacing(5) spacing(10);
-        background-color: map-get($colors, "international-orange");
     }
 
     &__copyright-img {
@@ -84,12 +91,14 @@
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .footer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0 spacing(8);
-        padding: spacing(15) spacing(10) 0;
+        &__body {
+            flex-direction: row;
+            gap: 0 spacing(8);
+            padding: spacing(15) spacing(10) 0;
+        }
+
         &__text-part {
-            flex-basis: calc(25% - spacing(6));
+            flex-basis: 25%;
             gap: spacing(5);
         }
 
@@ -116,7 +125,7 @@
         }
 
         &__menu-part {
-            flex-basis: calc(25% - spacing(6));
+            flex-basis: 25%;
             gap: spacing(5);
         }
 
@@ -124,21 +133,21 @@
             gap: spacing(1);
         }
 
-        &__copyright {
+        &__copyright-body {
             justify-content: center;
-            flex-basis: calc(200%);
-            margin: spacing(13) spacing(-10) 0;
+            margin-top: spacing(13);
         }
     }
 }
 
 @media (min-width: map-get($breakpoint,"large")) {
     .footer {
-        gap: 0 spacing(10);
-        padding: spacing(15) spacing(34) 0;
+        &__body {
+            gap: 0 spacing(10);
+            padding: spacing(15) spacing(34) 0;
+        }
 
         &__text-part {
-            flex-basis: calc(25% - spacing(7.5));
             gap: spacing(7);
         }
 
@@ -161,16 +170,11 @@
         }
 
         &__menu-part {
-            flex-basis: calc(25% - spacing(7.5));
             gap: spacing(7);
         }
 
         &__menu-list {
             gap: spacing(3);
-        }
-
-        &__copyright {
-            margin: spacing(13) spacing(-34) 0;
         }
     }
 }

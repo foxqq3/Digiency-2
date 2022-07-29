@@ -1,5 +1,8 @@
 .main-preview {
     background-color: map-get($colors, "sauvignon");
+    @include dark-theme {
+        background-color: map-get($colors, "shark");
+    }
     &__body {
         @include container-default;
         display: flex;

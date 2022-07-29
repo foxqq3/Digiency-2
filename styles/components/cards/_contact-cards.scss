@@ -3,6 +3,9 @@
     padding: spacing(5) spacing(5) spacing(7);
     background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
+    @include dark-theme {
+        background-color: map-get($colors, "shark");
+    }
     &__upper-part-wrapper {
         display: flex;
         gap: spacing(5);
@@ -27,6 +30,9 @@
         line-height: 1.25em;
         font-weight: 600;
         color: map-get($colors, "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__info {

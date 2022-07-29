@@ -3,6 +3,9 @@
     line-height: 1.25em;
     font-weight: 600;
     color: map-get($colors, "mine-shaft");
+    @include dark-theme {
+        color: map-get($colors, "white");
+    }
 }
 
 .h2 {
@@ -10,6 +13,9 @@
     line-height: 1.25em;
     font-weight: 500;
     color: map-get($colors, "mine-shaft");
+    @include dark-theme {
+        color: map-get($colors, "white");
+    }
 }
 
 .h3 {
@@ -17,6 +23,9 @@
     line-height: 1.25em;
     font-weight: 500;
     color: map-get($colors, "mine-shaft");
+    @include dark-theme {
+        color: map-get($colors, "white");
+    }
 }
 
 @media (min-width: map-get($breakpoint,"medium")) {

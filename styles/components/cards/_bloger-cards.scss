@@ -6,6 +6,9 @@
     padding: spacing(5) spacing(4) spacing(7);
     background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
+    @include dark-theme {
+        background-color: map-get($colors, "shark");
+    }
     &__blog {
         display: flex;
         gap: spacing(12);
@@ -22,6 +25,9 @@
         min-width: 170px;
         margin: spacing(2) 0 0;
         color: map-get($colors, "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__blog-img {
@@ -44,6 +50,9 @@
     &__name {
         margin: 0;
         color: map-get($colors, "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__status {

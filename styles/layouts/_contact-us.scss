@@ -1,5 +1,6 @@
-.contact-us {
+.contact-us { 
     padding: 0 spacing(5) spacing(12);
+    @include container-default;
     &__cards {
         display: flex;
         flex-direction: column;

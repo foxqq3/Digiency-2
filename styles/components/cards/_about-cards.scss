@@ -5,6 +5,9 @@
     padding: spacing(6) spacing(12) spacing(5);
     background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
+    @include dark-theme {
+        background-color: map-get($colors, "cape-cod");
+    }
 
     &__icon {
         width: 70px;
@@ -17,6 +20,9 @@
         font-weight: 500;
         color: map-get($colors, "mine-shaft");
         text-align: center;
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 }
 

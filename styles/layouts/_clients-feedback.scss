@@ -1,5 +1,8 @@
 .clients-feedback {
     background-color: map-get($colors, "sauvignon");
+    @include dark-theme {
+        background-color: map-get($colors, "shark");
+    }
     &__body {
         @include container-default;
         padding: spacing(12) spacing(5);

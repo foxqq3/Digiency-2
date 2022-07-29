@@ -1,4 +1,8 @@
 .header {
+    @include dark-theme {
+        background-color: map-get($colors, "cape-cod");
+    }
+
     &__body {
         @include container-default();
         display: flex;
@@ -20,6 +24,12 @@
 
     &__menu {
         display: none;
+    }
+
+    &__menu-item {
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__theme-switcher {

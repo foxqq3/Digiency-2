@@ -5,6 +5,11 @@
     outline:none;
     border: none;
     box-shadow: $default-box-shadow;
+    @include dark-theme {
+        color: map-get($colors, "white");
+        background-color: map-get($colors, "shark");
+    }
+
     &:focus {
         border: none;
         box-shadow: $orange-box-shadow;

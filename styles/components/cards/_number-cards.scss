@@ -6,12 +6,18 @@
     padding: spacing(18) 0;
     background-color: map-get($colors, "white");
     box-shadow: $default-box-shadow;
+    @include dark-theme {
+        background-color: map-get($colors, "cape-cod");
+    }
     &__title-number {
         @include font-size("huge");
         margin: 0;
         line-height: 1.25em;
         font-weight: 700;
         color: map-get($colors, "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__name {
@@ -19,6 +25,9 @@
         margin: 0;
         line-height: 1.25em;
         font-weight: 500;
+        @include dark-theme {
+            color: map-get($colors, "boulder");
+        }
     }
 }
 
