@@ -29,6 +29,12 @@
     &__menu-item {
         @include dark-theme {
             color: map-get($colors, "white");
+            &:hover {
+                color: map-get($colors, "atomic-tangerine");
+            }
+            &:active {
+                color: map-get($colors, "international-orange");
+            }
         }
     }
 
