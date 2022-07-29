@@ -2,7 +2,7 @@
     @include dark-theme {
         background-color: map-get($colors, "cape-cod");
     }
-
+  
     &__body {
         @include container-default();
         display: flex;
@@ -37,6 +37,8 @@
         align-items: center;
         justify-content: center;
         flex-basis: 33%;
+        background: none;
+        border: none;
     }
 
     &__icon {

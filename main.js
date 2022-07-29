@@ -1,9 +1,9 @@
-import './styles/style.scss'
-
+import "./styles/style.scss";
 
 //horicontal scroll
-document.getElementById("horizontal-scroller")
-  .addEventListener('wheel', function(event) {
+document
+  .getElementById("horizontal-scroller")
+  .addEventListener("wheel", function (event) {
     if (event.deltaMode == event.DOM_DELTA_PIXEL) {
       var modifier = 1;
       // иные режимы возможны в Firefox
@@ -18,3 +18,11 @@ document.getElementById("horizontal-scroller")
       event.preventDefault();
     }
   });
+
+//theme switcher
+let page = document.querySelector("body");
+let themeButton = document.querySelector(".header__theme-switcher");
+
+themeButton.onclick = function () {
+  page.classList.toggle("dark-theme");
+};
