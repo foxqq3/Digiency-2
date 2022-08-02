@@ -38,9 +38,9 @@
 
 @media (min-width: map-get($breakpoint,"medium")) {
     .employee-cards {
+        transition: transform 300ms;
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
     }
 }

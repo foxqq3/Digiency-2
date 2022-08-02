@@ -17,7 +17,12 @@
 
     &__logo-link {
         display: flex;
+        color: map-get($colors , "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
+
     &__logo-img {
         height: 24px;
     }
@@ -43,8 +48,12 @@
         align-items: center;
         justify-content: center;
         flex-basis: 33%;
+        color: map-get($colors , "mine-shaft");
         background: none;
         border: none;
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 
     &__icon {
@@ -57,6 +66,10 @@
         align-items: center;
         justify-content: end;
         flex-basis: 33%;
+        color: map-get($colors , "mine-shaft");
+        @include dark-theme {
+            color: map-get($colors, "white");
+        }
     }
 }
 

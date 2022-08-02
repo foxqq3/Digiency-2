@@ -29,9 +29,9 @@
         &__right-figure,
         &__middle-figure,
         &__left-figure {
+            transition: transform 300ms;
             &:hover {
                 transform: scale(1.1);
-                transition: transform 300ms;
             }
         }
     }

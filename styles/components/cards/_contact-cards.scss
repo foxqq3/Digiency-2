@@ -53,10 +53,10 @@
 @media (min-width: map-get($breakpoint,"medium")) {
     .contact-cards {
         padding: spacing(5) spacing(4);
+        transition: transform 300ms;
 
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
 
         &__upper-part-wrapper {

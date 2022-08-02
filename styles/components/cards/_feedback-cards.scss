@@ -42,6 +42,7 @@
     .feedback-cards {
         margin-left: spacing(6);
         padding-right: spacing(8);
+        transition: transform 300ms;
 
         &__job-title {
             margin-top: spacing(3);
@@ -63,7 +64,6 @@
 
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
     }
 }

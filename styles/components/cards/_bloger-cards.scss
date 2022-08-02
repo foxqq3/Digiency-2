@@ -79,6 +79,7 @@
 @media (min-width: map-get($breakpoint,"medium")) {
     .bloger-cards {
         padding: spacing(5) spacing(4) spacing(7);
+        transition: transform 300ms;
         &__blog {
             gap: spacing(6);
         }
@@ -122,7 +123,6 @@
 
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
     }
 }

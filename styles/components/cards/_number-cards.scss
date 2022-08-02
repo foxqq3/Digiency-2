@@ -34,6 +34,7 @@
 @media (min-width: map-get($breakpoint,"medium")) {
     .number-cards {
         padding: spacing(11) 0;
+        transition: transform 300ms;
         &__title-number {
             @include font-size("xlarge");
             font-weight: 500;
@@ -45,7 +46,6 @@
         }
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
     }
 }

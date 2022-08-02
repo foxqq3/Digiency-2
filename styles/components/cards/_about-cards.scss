@@ -30,14 +30,13 @@
     .about-cards {
         flex-basis: 25%;
         padding: spacing(9) spacing(3) spacing(5);
-        
+        transition: transform 300ms;
         &__description {
             font-weight: 400;
         }
         
         &:hover {
             transform: scale(1.05);
-            transition: transform 300ms;
         }
     }
 }
