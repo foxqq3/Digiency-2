@@ -1,26 +1,29 @@
 .btn {
-    @include font-size("large");
-    @include text-ellipsis();
-    display: inline-flex;
-    padding: spacing(3) spacing(5);
-    font-family: inherit;
-    font-weight: 500;
-    color: map-get($colors, "white");
-    background-color: map-get($colors, "international-orange");
-    border: none;
-    border-radius: 5px;
-    transition: all 0.15ms;
-    
-    &:hover {
-        background-color: map-get($colors, "crusta");
-    }
+  @include font-size('large');
+  @include text-ellipsis();
+  display: inline-flex;
+  padding: spacing(3) spacing(5);
+  font-family: inherit;
+  font-weight: 500;
+  color: map-get($colors, 'white');
+  background-color: map-get($colors, 'international-orange');
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
 
-    &:focus {
-        filter: drop-shadow(4px 5px 8px rgba(map-get($colors, "international-orange"),0.4));
-    }
+  &:hover {
+    background-color: map-get($colors, 'crusta');
+  }
 
-    &:active {
-        background-color: map-get($colors, "sorbus");
-    }
+  &:focus {
+    outline: none;
+
+    filter: drop-shadow(
+      4px 5px 8px rgba(map-get($colors, 'international-orange'), 0.4)
+    );
+  }
+
+  &:active {
+    background-color: map-get($colors, 'sorbus');
+  }
 }
-

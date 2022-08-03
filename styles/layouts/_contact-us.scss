@@ -1,84 +1,84 @@
-.contact-us { 
-    padding: 0 spacing(5) spacing(12);
-    @include container-default;
+.contact-us {
+  padding: 0 spacing(5) spacing(12);
+  @include container-default;
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(6);
+    margin: spacing(5) 0 0;
+    padding: 0;
+  }
+  &__send-form {
+    margin-top: spacing(15);
+  }
+
+  &__map-wrapper {
+    width: auto;
+    height: 250px;
+    margin-top: spacing(12);
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__sponsors {
+    display: flex;
+    gap: spacing(8);
+    margin: spacing(12) 0 0;
+    padding: 0;
+  }
+
+  &__sponsors-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: map-get($breakpoint,'medium')) {
+  .contact-us {
+    padding: 0 spacing(10) spacing(30);
     &__cards {
-        display: flex;
-        flex-direction: column;
-        gap: spacing(6);
-        margin: spacing(5) 0 0;
-        padding: 0;
-    }
-    &__send-form {
-        margin-top: spacing(15);
+      flex-direction: row;
+      gap: spacing(6);
+      margin-top: spacing(5);
+      padding: 0;
     }
 
     &__map-wrapper {
-        width: auto;
-        height: 250px;
-        margin-top: spacing(12);
-    }
-
-    &__map {
-        width: 100%;
-        height: 100%;
+      height: 300px;
+      margin-top: spacing(15);
     }
 
     &__sponsors {
-        display: flex;
-        gap: spacing(8);
-        margin: spacing(12) 0 0;
-        padding: 0;
+      gap: spacing(13);
+      margin-top: spacing(30);
     }
 
     &__sponsors-img {
-        width: 100%;
-        height: 100%;
+      transition: transform 300ms;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
+  }
 }
 
-@media (min-width: map-get($breakpoint,"medium")) {
-    .contact-us {
-        padding: 0 spacing(10) spacing(30);
-        &__cards {
-            flex-direction: row;
-            gap: spacing(6);
-            margin-top: spacing(5);
-            padding: 0;
-        }
-
-        &__map-wrapper {
-            height: 300px;
-            margin-top: spacing(15);
-        }
-
-        &__sponsors {
-            gap: spacing(13);
-            margin-top: spacing(30);
-        }
-
-        &__sponsors-img {
-            transition: transform 300ms;
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
+@media (min-width: map-get($breakpoint,'large')) {
+  .contact-us {
+    padding: 0 spacing(34) spacing(30);
+    &__cards {
+      gap: spacing(8);
+      margin-top: spacing(15);
+      padding: 0;
     }
-}
 
-@media (min-width: map-get($breakpoint,"large")) {
-    .contact-us {
-        padding: 0 spacing(34) spacing(30);
-        &__cards {
-            gap: spacing(8);
-            margin-top: spacing(15);
-            padding: 0;
-        }
-
-        &__map-wrapper {
-            height: 450px;
-        }
-        &__sponsors {
-            gap: spacing(30);
-        }
+    &__map-wrapper {
+      height: 450px;
     }
+    &__sponsors {
+      gap: spacing(30);
+    }
+  }
 }

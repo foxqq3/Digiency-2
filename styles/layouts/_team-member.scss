@@ -1,34 +1,38 @@
 .team-member {
-    @include container-default;
-    padding: spacing(12) spacing(1) spacing(8);
+  @include container-default;
+  padding: spacing(12) spacing(1) spacing(8);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    gap: spacing(4);
+    overflow-x: auto;
+    margin: 0;
+    padding: spacing(4);
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoint,'medium')) {
+  .team-member {
+    padding: spacing(30) spacing(6) spacing(26);
 
     &__cards {
-        display: flex;
-        gap: spacing(4);
-        overflow-x: auto;
-        margin: 0;
-        padding: spacing(4);
-        
-        &::-webkit-scrollbar {
-            width: 0;
-        }
+      justify-content: space-between;
+      gap: spacing(8);
+      margin-top: spacing(11);
     }
+  }
 }
 
-@media (min-width: map-get($breakpoint,"medium")) {
-    .team-member {
-        padding: spacing(30) spacing(6) spacing(26);
-
-        &__cards {
-            justify-content: space-between;
-            gap: spacing(8);
-            margin-top: spacing(11);
-        }
-    }
-}
-
-@media (min-width: map-get($breakpoint,"large")) {
-    .team-member {
-        padding: spacing(30) spacing(26) spacing(26);
-    }
+@media (min-width: map-get($breakpoint,'large')) {
+  .team-member {
+    padding: spacing(30) spacing(26) spacing(26);
+  }
 }
