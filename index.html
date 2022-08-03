@@ -1,608 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digiency-2</title>
-  </head>
-  <body class="">
-    {{> header }}
-
-    <main>
-      <section class="main-preview">
-        <div class="main-preview__body">
-          <div class="main-preview__img-container">
-            <img
-              class="main-preview__img"
-              src="img/special-graphics/1.svg"
-              alt="Best business"
-            />
-          </div>
-          <div class="main-preview__content-container">
-            <h1 class="h1 main-preview__title">
-              We Are The Best
-              <span class="text-color-changer-international-orange">
-                Digital Agency</span
-              >
-              for business
-            </h1>
-            <p class="main-preview__description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              <span class="main-preview__description-add">
-                Exercitation veniam consequat sunt nostrud amet.
-              </span>
-            </p>
-            <button class="btn main-preview__btn" type="button">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="about-us">
-        <div class="section-block-sample">
-          <div class="section-block-sample__material-container">
-            <img
-              class="about-us__img"
-              src="img/special-graphics/2.svg"
-              alt="About us img"
-            />
-          </div>
-          <div class="section-block-sample__content-container">
-            <p class="section-block-sample__name">About us</p>
-            <h2 class="h2 section-block-sample__title">
-              We Are
-              <span class="text-color-changer-international-orange"
-                >Making Ideas Better </span
-              >For Everyone
-            </h2>
-            <p class="section-block-sample__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
-              imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum
-              aenean.
-              <span class="about-us__description-add-large">
-                Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem
-                vulputate orci eget mi, sed pulvinar.
-              </span>
-            </p>
-            <p class="section-block-sample__description">
-              Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
-              faucibus est, dui interdum ut amet.
-              <span class="about-us__description-add-large">
-                Adipiscing feugiat vel at posuere in. Pellentesque volutpat
-                vestibulum.
-              </span>
-            </p>
-            <button class="btn section-block-sample__btn" type="button">
-              Contact Us
-            </button>
-          </div>
-        </div>
-        <div class="about-us__second-part">
-          <ul class="about-us__cards">
-            <li class="about-cards">
-              <img class="about-cards__icon" src="img/icons/file.svg" alt="" />
-              <p class="about-cards__description">
-                World leader in consulting and finance
-              </p>
+{{#> layout }} {{> main-preview }} {{> about-us }}
+<section class="our-experience">
+  <div class="our-experience__body">
+    <div class="section-block-sample -center">
+      <div class="section-block-sample__content-container">
+        <p class="section-block-sample__name">Our Expereince</p>
+        <h2 class="h2 section-block-sample__title">
+          We Have Completed
+          <span class="text-color-changer-international-orange"
+            >150+ Projects </span
+          >Succesfully
+        </h2>
+        <p class="section-block-sample__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+          imperdiet at a augue ullamcorper.
+          <span class="our-experience__description-add-medium">
+            Leo faucibus feugiat rutrum aenean.
+          </span>
+          <span class="our-experience__description-add-large"
+            >Nisi, lectus aliquet aliquam consectetur augue praesent. Lorem
+            vulputate orci eget mi, sed pulvinar.
+          </span>
+        </p>
+        <p class="section-block-sample__description">
+          Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
+          faucibus est, dui interdum ut amet.
+          <span class="our-experience__description-add-medium">
+            Adipiscing feugiat vel at posuere in. </span
+          ><span class="our-experience__description-add-large"
+            >Pellentesque volutpat vestibulum.
+          </span>
+        </p>
+        <button class="btn section-block-sample__btn" type="button">
+          Contact Us
+        </button>
+      </div>
+      <div class="section-block-sample__material-container">
+        <div class="our-experience__cards">
+          <ul class="our-experience__cards-container">
+            <li class="number-cards">
+              <p class="number-cards__title-number">250+</p>
+              <p class="number-cards__name">Global Customer</p>
             </li>
-            <li class="about-cards">
-              <img
-                class="about-cards__icon"
-                src="img/icons/parentheses.svg"
-                alt=""
-              />
-              <p class="about-cards__description">
-                A focused team with a specialized skill
-              </p>
+            <li class="number-cards">
+              <p class="number-cards__title-number">50+</p>
+              <p class="number-cards__name">Team Member</p>
             </li>
-            <li class="about-cards">
-              <img class="about-cards__icon" src="img/icons/gear.svg" alt="" />
-              <p class="about-cards__description">
-                Trusted and professional advisors for you
-              </p>
+          </ul>
+          <ul class="our-experience__cards-container">
+            <li class="number-cards">
+              <p class="number-cards__title-number">156+</p>
+              <p class="number-cards__name">Project Completed</p>
             </li>
-            <li class="about-cards">
-              <img
-                class="about-cards__icon"
-                src="img/icons/experience.svg"
-                alt=""
-              />
-              <p class="about-cards__description">
-                Experience to give you a better results
-              </p>
+            <li class="number-cards">
+              <p class="number-cards__title-number">15+</p>
+              <p class="number-cards__name">Our Company</p>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="our-experience">
-        <div class="our-experience__body">
-          <div class="section-block-sample -center">
-            <div class="section-block-sample__content-container">
-              <p class="section-block-sample__name">Our Expereince</p>
-              <h2 class="h2 section-block-sample__title">
-                We Have Completed
-                <span class="text-color-changer-international-orange"
-                  >150+ Projects </span
-                >Succesfully
-              </h2>
-              <p class="section-block-sample__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nascetur imperdiet at a augue ullamcorper.
-                <span class="our-experience__description-add-medium">
-                  Leo faucibus feugiat rutrum aenean.
-                </span>
-                <span class="our-experience__description-add-large"
-                  >Nisi, lectus aliquet aliquam consectetur augue praesent.
-                  Lorem vulputate orci eget mi, sed pulvinar.
-                </span>
-              </p>
-              <p class="section-block-sample__description">
-                Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
-                faucibus est, dui interdum ut amet.
-                <span class="our-experience__description-add-medium">
-                  Adipiscing feugiat vel at posuere in. </span
-                ><span class="our-experience__description-add-large"
-                  >Pellentesque volutpat vestibulum.
-                </span>
-              </p>
-              <button class="btn section-block-sample__btn" type="button">
-                Contact Us
-              </button>
-            </div>
-            <div class="section-block-sample__material-container">
-              <div class="our-experience__cards">
-                <ul class="our-experience__cards-container">
-                  <li class="number-cards">
-                    <p class="number-cards__title-number">250+</p>
-                    <p class="number-cards__name">Global Customer</p>
-                  </li>
-                  <li class="number-cards">
-                    <p class="number-cards__title-number">50+</p>
-                    <p class="number-cards__name">Team Member</p>
-                  </li>
-                </ul>
-                <ul class="our-experience__cards-container">
-                  <li class="number-cards">
-                    <p class="number-cards__title-number">156+</p>
-                    <p class="number-cards__name">Project Completed</p>
-                  </li>
-                  <li class="number-cards">
-                    <p class="number-cards__title-number">15+</p>
-                    <p class="number-cards__name">Our Company</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team-member">
+  <div class="name-and-title-sample">
+    <p class="name-and-title-sample__name">Team Member</p>
+    <h2 class="h2 name-and-title-sample__title">
+      We Have <br />
+      <span class="text-color-changer-international-orange">Some Awesome</span>
+      People
+    </h2>
+  </div>
+  <ul id="horizontal-scroller" class="team-member__cards">
+    <li class="employee-cards">
+      <img
+        class="employe-cards__img"
+        src="img/employee/gustavo_herwitz.png"
+        alt="Gustavo Herwitz photo"
+      />
+      <div class="employee-cards__text">
+        <p class="employee-cards__person-name">Gustavo Herwitz</p>
+        <p class="employee-cards__job-title">UI/UX Designer</p>
+      </div>
+    </li>
+    <li class="employee-cards">
+      <img
+        class="employe-cards__img"
+        src="img/employee/phillip_curtis.png"
+        alt="Phillip Curtis photo"
+      />
+      <div class="employee-cards__text">
+        <p class="employee-cards__person-name">Phillip Curtis</p>
+        <p class="employee-cards__job-title">Graphic Designer</p>
+      </div>
+    </li>
+    <li class="employee-cards">
+      <img
+        class="employee-cards__img"
+        src="img/employee/talan_torff.png"
+        alt="Talan Torff photo"
+      />
+      <div class="employee-cards__text">
+        <p class="employee-cards__person-name">Talan Torff</p>
+        <p class="employee-cards__job-title">Web Developer</p>
+      </div>
+    </li>
+    <li class="employee-cards">
+      <img
+        class="employe-cards__img"
+        src="img/employee/abram_vaccaro.png"
+        alt="Abram Vaccaro photo"
+      />
+      <div class="employee-cards__text">
+        <p class="employee-cards__person-name">Abram Vaccaro</p>
+        <p class="employee-cards__job-title">App Developer</p>
+      </div>
+    </li>
+  </ul>
+</section>
+<section class="our-work">
+  <div class="name-and-title-sample">
+    <p class="name-and-title-sample__name">Our Work</p>
+    <h2 class="h2 name-and-title-sample__title">
+      We Have Some <br />
+      <span class="text-color-changer-international-orange"
+        >Designed & Development</span
+      >
+      Projects
+    </h2>
+  </div>
+  <ul class="our-work__filter">
+    <li>
+      <a class="animation-href our-work__filter-item" href="#">All</a>
+    </li>
+    <li>
+      <a class="animation-href our-work__filter-item" href="#"
+        >Graphic Design</a
+      >
+    </li>
+    <li>
+      <a class="animation-href our-work__filter-item" href="#">UI/UX Design</a>
+    </li>
+    <li>
+      <a class="animation-href our-work__filter-item" href="#"
+        >Web Development</a
+      >
+    </li>
+  </ul>
+  <div class="our-work__materials">
+    <ul class="our-work__tiles">
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/1.png"
+          alt="Work image"
+        />
+      </li>
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/2.png"
+          alt="Work image"
+        />
+      </li>
+    </ul>
+    <ul class="our-work__tiles">
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/4.png"
+          alt="Work image"
+        />
+      </li>
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/3.png"
+          alt="Work image"
+        />
+      </li>
+    </ul>
+    <ul class="our-work__tiles">
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/5.png"
+          alt="Work image"
+        />
+      </li>
+      <li class="our-work__tiles-item">
+        <img
+          class="our-work__tiles-img"
+          src="img/our-works/6.png"
+          alt="Work image"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="clients-feedback">
+  <div class="clients-feedback__body">
+    <div class="name-and-title-sample">
+      <p class="name-and-title-sample__name">Clients Feedback</p>
+      <h2 class="h2 name-and-title-sample__title">
+        Some
+        <span class="text-color-changer-international-orange"
+          >Great <br />Words
+        </span>
+        From Our Clients
+      </h2>
+    </div>
+    <ul class="section-scroll-block-sample__cards">
+      <li class="feedback-cards">
+        <img
+          class="feedback-cards__img"
+          src="img/photo-feedback/1.png"
+          alt="Justin Septimus photo"
+        />
+        <p class="feedback-cards__person-name">Justin Septimus</p>
+        <p class="feedback-cards__job-title">CEO,word yt</p>
+        <p class="feedback-cards__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="feedback-cards__text-add-medium"
+            >Sit a laoreet libero dis eget maecenas bibendum.
+          </span>
+          <span class="feedback-cards__text-add-large"
+            >Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
+            adipiscing.</span
+          >
+        </p>
+      </li>
+      <li class="feedback-cards">
+        <img
+          class="feedback-cards__img"
+          src="img/photo-feedback/2.png"
+          alt="Justin Septimus photo"
+        />
+        <p class="feedback-cards__person-name">Ashlynn Gouse</p>
+        <p class="feedback-cards__job-title">Managing Director</p>
+        <p class="feedback-cards__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <span class="feedback-cards__text-add-medium"
+            >Sit a laoreet libero dis eget maecenas bibendum.
+          </span>
+          <span class="feedback-cards__text-add-large"
+            >Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
+            adipiscing.</span
+          >
+        </p>
+      </li>
+    </ul>
+    <div class="switcher section-scroll-block-sample__switcher">
+      <a href=""><div class="switcher__left-figure"></div></a>
+      <a href=""><div class="switcher__middle-figure"></div></a>
+      <a href=""><div class="switcher__right-figure"></div></a>
+    </div>
+  </div>
+</section>
+<section class="our-blog">
+  <div class="name-and-title-sample">
+    <p class="name-and-title-sample__name">Our Blog</p>
+    <h2 class="h2 name-and-title-sample__title">
+      Our Latest
+      <span class="text-color-changer-international-orange"
+        >Blogs <br />Will Keep
+      </span>
+      Everyone Updated
+    </h2>
+  </div>
+  <ul class="section-scroll-block-sample__cards -gap-for-default-cards">
+    <li class="bloger-cards">
+      <div class="bloger-cards__blog">
+        <div>
+          <p class="bloger-cards__blog-title">Graphic Design</p>
+          <p class="bloger-cards__blog-fragment">
+            35 Stellar Graphic Design Blogs to Keep You Educated and Inspired
+          </p>
+        </div>
+        <img
+          class="bloger-cards__blog-img"
+          src="img/blogs/1-blog.png"
+          alt="Graphic Design blog image"
+        />
+      </div>
+      <div class="bloger-cards__person">
+        <img
+          class="bloger-cards__person-img"
+          src="img/blogs/1-person.png"
+          alt="Cristofer Westervelt photo"
+        />
+        <div>
+          <p class="bloger-cards__name">Cristofer Westervelt</p>
+          <div class="bloger-cards__status">
+            <p class="bloger-cards__date">January 25, 2021</p>
+            <div class="bloger-cards__dot"></div>
+            <p class="bloger-cards__date">5 min Read</p>
           </div>
         </div>
-      </section>
-      <section class="team-member">
-        <div class="name-and-title-sample">
-          <p class="name-and-title-sample__name">Team Member</p>
-          <h2 class="h2 name-and-title-sample__title">
-            We Have <br />
-            <span class="text-color-changer-international-orange"
-              >Some Awesome</span
-            >
-            People
-          </h2>
+      </div>
+    </li>
+    <li class="bloger-cards">
+      <div class="bloger-cards__blog">
+        <div>
+          <p class="bloger-cards__blog-title">Managing Director</p>
+          <p class="bloger-cards__blog-fragment">
+            Ridiculously powerful 2021 iPad Pro may drop this month
+          </p>
         </div>
-        <ul id="horizontal-scroller" class="team-member__cards">
-          <li class="employee-cards">
-            <img
-              class="employe-cards__img"
-              src="img/employee/gustavo_herwitz.png"
-              alt="Gustavo Herwitz photo"
-            />
-            <div class="employee-cards__text">
-              <p class="employee-cards__person-name">Gustavo Herwitz</p>
-              <p class="employee-cards__job-title">UI/UX Designer</p>
-            </div>
-          </li>
-          <li class="employee-cards">
-            <img
-              class="employe-cards__img"
-              src="img/employee/phillip_curtis.png"
-              alt="Phillip Curtis photo"
-            />
-            <div class="employee-cards__text">
-              <p class="employee-cards__person-name">Phillip Curtis</p>
-              <p class="employee-cards__job-title">Graphic Designer</p>
-            </div>
-          </li>
-          <li class="employee-cards">
-            <img
-              class="employee-cards__img"
-              src="img/employee/talan_torff.png"
-              alt="Talan Torff photo"
-            />
-            <div class="employee-cards__text">
-              <p class="employee-cards__person-name">Talan Torff</p>
-              <p class="employee-cards__job-title">Web Developer</p>
-            </div>
-          </li>
-          <li class="employee-cards">
-            <img
-              class="employe-cards__img"
-              src="img/employee/abram_vaccaro.png"
-              alt="Abram Vaccaro photo"
-            />
-            <div class="employee-cards__text">
-              <p class="employee-cards__person-name">Abram Vaccaro</p>
-              <p class="employee-cards__job-title">App Developer</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="our-work">
-        <div class="name-and-title-sample">
-          <p class="name-and-title-sample__name">Our Work</p>
-          <h2 class="h2 name-and-title-sample__title">
-            We Have Some <br />
-            <span class="text-color-changer-international-orange"
-              >Designed & Development</span
-            >
-            Projects
-          </h2>
-        </div>
-        <ul class="our-work__filter">
-          <li>
-            <a class="animation-href our-work__filter-item" href="#">All</a>
-          </li>
-          <li>
-            <a class="animation-href our-work__filter-item" href="#"
-              >Graphic Design</a
-            >
-          </li>
-          <li>
-            <a class="animation-href our-work__filter-item" href="#"
-              >UI/UX Design</a
-            >
-          </li>
-          <li>
-            <a class="animation-href our-work__filter-item" href="#"
-              >Web Development</a
-            >
-          </li>
-        </ul>
-        <div class="our-work__materials">
-          <ul class="our-work__tiles">
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/1.png"
-                alt="Work image"
-              />
-            </li>
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/2.png"
-                alt="Work image"
-              />
-            </li>
-          </ul>
-          <ul class="our-work__tiles">
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/4.png"
-                alt="Work image"
-              />
-            </li>
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/3.png"
-                alt="Work image"
-              />
-            </li>
-          </ul>
-          <ul class="our-work__tiles">
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/5.png"
-                alt="Work image"
-              />
-            </li>
-            <li class="our-work__tiles-item">
-              <img
-                class="our-work__tiles-img"
-                src="img/our-works/6.png"
-                alt="Work image"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="clients-feedback">
-        <div class="clients-feedback__body">
-          <div class="name-and-title-sample">
-            <p class="name-and-title-sample__name">Clients Feedback</p>
-            <h2 class="h2 name-and-title-sample__title">
-              Some
-              <span class="text-color-changer-international-orange"
-                >Great <br />Words
-              </span>
-              From Our Clients
-            </h2>
-          </div>
-          <ul class="section-scroll-block-sample__cards">
-            <li class="feedback-cards">
-              <img
-                class="feedback-cards__img"
-                src="img/photo-feedback/1.png"
-                alt="Justin Septimus photo"
-              />
-              <p class="feedback-cards__person-name">Justin Septimus</p>
-              <p class="feedback-cards__job-title">CEO,word yt</p>
-              <p class="feedback-cards__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <span class="feedback-cards__text-add-medium"
-                  >Sit a laoreet libero dis eget maecenas bibendum.
-                </span>
-                <span class="feedback-cards__text-add-large"
-                  >Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
-                  adipiscing.</span
-                >
-              </p>
-            </li>
-            <li class="feedback-cards">
-              <img
-                class="feedback-cards__img"
-                src="img/photo-feedback/2.png"
-                alt="Justin Septimus photo"
-              />
-              <p class="feedback-cards__person-name">Ashlynn Gouse</p>
-              <p class="feedback-cards__job-title">Managing Director</p>
-              <p class="feedback-cards__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <span class="feedback-cards__text-add-medium"
-                  >Sit a laoreet libero dis eget maecenas bibendum.
-                </span>
-                <span class="feedback-cards__text-add-large"
-                  >Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
-                  adipiscing.</span
-                >
-              </p>
-            </li>
-          </ul>
-          <div class="switcher section-scroll-block-sample__switcher">
-            <a href=""><div class="switcher__left-figure"></div></a>
-            <a href=""><div class="switcher__middle-figure"></div></a>
-            <a href=""><div class="switcher__right-figure"></div></a>
+        <img
+          class="bloger-cards__blog-img"
+          src="img/blogs/2-blog.png"
+          alt="Managing Director blog image"
+        />
+      </div>
+      <div class="bloger-cards__person">
+        <img
+          class="bloger-cards__person-img"
+          src="img/blogs/2-person.png"
+          alt="Cristofer Westervelt photo"
+        />
+        <div>
+          <p class="bloger-cards__name">Haylie Mango</p>
+          <div class="bloger-cards__status">
+            <p class="bloger-cards__date">January 25, 2021</p>
+            <div class="bloger-cards__dot"></div>
+            <p class="bloger-cards__date">5 min Read</p>
           </div>
         </div>
-      </section>
-      <section class="our-blog">
-        <div class="name-and-title-sample">
-          <p class="name-and-title-sample__name">Our Blog</p>
-          <h2 class="h2 name-and-title-sample__title">
-            Our Latest
-            <span class="text-color-changer-international-orange"
-              >Blogs <br />Will Keep
-            </span>
-            Everyone Updated
-          </h2>
-        </div>
-        <ul class="section-scroll-block-sample__cards -gap-for-default-cards">
-          <li class="bloger-cards">
-            <div class="bloger-cards__blog">
-              <div>
-                <p class="bloger-cards__blog-title">Graphic Design</p>
-                <p class="bloger-cards__blog-fragment">
-                  35 Stellar Graphic Design Blogs to Keep You Educated and
-                  Inspired
-                </p>
-              </div>
-              <img
-                class="bloger-cards__blog-img"
-                src="img/blogs/1-blog.png"
-                alt="Graphic Design blog image"
-              />
-            </div>
-            <div class="bloger-cards__person">
-              <img
-                class="bloger-cards__person-img"
-                src="img/blogs/1-person.png"
-                alt="Cristofer Westervelt photo"
-              />
-              <div>
-                <p class="bloger-cards__name">Cristofer Westervelt</p>
-                <div class="bloger-cards__status">
-                  <p class="bloger-cards__date">January 25, 2021</p>
-                  <div class="bloger-cards__dot"></div>
-                  <p class="bloger-cards__date">5 min Read</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="bloger-cards">
-            <div class="bloger-cards__blog">
-              <div>
-                <p class="bloger-cards__blog-title">Managing Director</p>
-                <p class="bloger-cards__blog-fragment">
-                  Ridiculously powerful 2021 iPad Pro may drop this month
-                </p>
-              </div>
-              <img
-                class="bloger-cards__blog-img"
-                src="img/blogs/2-blog.png"
-                alt="Managing Director blog image"
-              />
-            </div>
-            <div class="bloger-cards__person">
-              <img
-                class="bloger-cards__person-img"
-                src="img/blogs/2-person.png"
-                alt="Cristofer Westervelt photo"
-              />
-              <div>
-                <p class="bloger-cards__name">Haylie Mango</p>
-                <div class="bloger-cards__status">
-                  <p class="bloger-cards__date">January 25, 2021</p>
-                  <div class="bloger-cards__dot"></div>
-                  <p class="bloger-cards__date">5 min Read</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="switcher section-scroll-block-sample__switcher">
-          <a href=""><div class="switcher__left-figure"></div></a>
-          <a href=""><div class="switcher__middle-figure"></div></a>
-          <a href=""><div class="switcher__right-figure"></div></a>
-        </div>
-      </section>
-      <section class="contact-us">
-        <div class="name-and-title-sample">
-          <p class="name-and-title-sample__name">Contact Us</p>
-          <h2 class="h2 name-and-title-sample__title">
-            Feel
-            <span class="text-color-changer-international-orange"
-              >Free <br />to Contact
-            </span>
-            With Us
-          </h2>
-        </div>
-        <ul class="contact-us__cards">
-          <li class="contact-cards">
-            <div class="contact-cards__upper-part-wrapper">
-              <img
-                class="contact-cards__img"
-                src="img/contact/mail.svg"
-                alt="mail icon"
-              />
-              <div>
-                <p class="contact-cards__name">Drop a line</p>
-                <p class="contact-cards__title">Mail Us</p>
-              </div>
-            </div>
-            <ul class="contact-cards__info">
-              <li class="contact-cards__info-item">Support87@gmial.com</li>
-              <li class="contact-cards__info-item">ijkuiu874@gmial.com</li>
-            </ul>
-          </li>
-          <li class="contact-cards">
-            <div class="contact-cards__upper-part-wrapper">
-              <img
-                class="contact-cards__img"
-                src="img/contact/phone-call.svg"
-                alt="mail icon"
-              />
-              <div>
-                <p class="contact-cards__name">24/7 Service</p>
-                <p class="contact-cards__title">Call Us</p>
-              </div>
-            </div>
-            <ul class="contact-cards__info">
-              <li class="contact-cards__info-item">
-                +880 265 98745
-                <span class="text-color-changer-international-orange"
-                  >(Free)</span
-                >
-              </li>
-              <li class="contact-cards__info-item">+895 855 85589</li>
-            </ul>
-          </li>
-          <li class="contact-cards">
-            <div class="contact-cards__upper-part-wrapper">
-              <img
-                class="contact-cards__img"
-                src="img/contact/map-pin.svg"
-                alt="mail icon"
-              />
-              <div>
-                <p class="contact-cards__name">Location</p>
-                <p class="contact-cards__title">Visit Us</p>
-              </div>
-            </div>
-            <ul class="contact-cards__info">
-              <li class="contact-cards__info-item">
-                158 ralegih sit, houston, yk 5896,uk
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="send-form-sample contact-us__send-form">
-          <div class="send-form-sample__materials">
-            <img
-              class="send-form-sample__materials-img"
-              src="img/special-graphics/3.svg"
-              alt="Image for form"
-            />
-          </div>
-          <div class="send-form-sample__forms-contaner">
-            <h3 class="h3 send-form-sample__forms-title">
-              Send Your
-              <span class="text-color-changer-international-orange"
-                >Message To Us</span
-              >
-            </h3>
-            <form class="send-form-sample__forms">
-              <input class="form-set" type="text" placeholder="Name" />
-              <input class="form-set" type="email" placeholder="Email" />
-              <input class="form-set" type="tel" placeholder="Mobile No" />
-              <input class="form-set" type="text" placeholder="Subject" />
-              <textarea
-                class="form-set -textarea"
-                placeholder="Send Massage"
-              ></textarea>
-              <input
-                class="btn send-form-sample__btn"
-                type="submit"
-                value="Send Massage"
-              />
-            </form>
-          </div>
-        </div>
-        <div class="contact-us__map-wrapper">
-          <iframe
-            class="contact-us__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.30409545397!2d-122.3349424355463!3d37.55608850210323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2z0KHQsNC9LdCc0LDRgtC10L4sINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1659024843989!5m2!1sru!2sru"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <ul class="contact-us__sponsors">
-          <li>
-            <img
-              class="contact-us__sponsors-img"
-              src="img/sponsors/1.png"
-              alt="Gluten free"
-            />
-          </li>
-          <li>
-            <img
-              class="contact-us__sponsors-img"
-              src="img/sponsors/2.png"
-              alt="Butchery"
-            />
-          </li>
-          <li>
-            <img
-              class="contact-us__sponsors-img"
-              src="img/sponsors/3.png"
-              alt="Organic product"
-            />
-          </li>
-          <li>
-            <img
-              class="contact-us__sponsors-img"
-              src="img/sponsors/4.png"
-              alt="Restaurant"
-            />
-          </li>
-        </ul>
-      </section>
-
-      {{> footer }}
-    </main>
-    <script type="module" src="/main.js"></script>
-  </body>
-</html>
+      </div>
+    </li>
+  </ul>
+  <div class="switcher section-scroll-block-sample__switcher">
+    <a href=""><div class="switcher__left-figure"></div></a>
+    <a href=""><div class="switcher__middle-figure"></div></a>
+    <a href=""><div class="switcher__right-figure"></div></a>
+  </div>
+</section>
+{{> contact-us }} {{/ layout }}

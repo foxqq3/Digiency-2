@@ -7,8 +7,7 @@ export default defineConfig({
       partialDirectory: './partials',
       context: {
         navigationItems: [
-          { title: 'Home', href: '/' },
-          { title: 'About Us', href: '/' },
+          { title: 'About Us', href: '/about-us.html' },
           { title: 'Our Work', href: '/' },
           { title: 'Clients', href: '/' },
           { title: 'Our Blog', href: '/' },
