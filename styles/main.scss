@@ -1,25 +1,20 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
-//variables
-@import 'variables.scss';
-
-//functions
-@import 'functions/_functions.scss';
-
-//mixins
-@import 'mixins/_mixins.scss';
-
-//base
 @import 'normalize.scss';
+
+// base
+@import 'variables.scss';
+@import 'functions.scss';
+@import 'mixins.scss';
+
 @import 'dop-null.scss';
 
-//utilits
 @import 'utilits/_text-color-changer.scss';
 @import 'utilits/_animation-href.scss';
 
+@import 'typography.scss';
+
 //components
-@import 'components/_typography.scss';
 @import 'components/_btn.scss';
 @import 'components/_switcher.scss';
 @import 'components/_form-set.scss';
@@ -38,7 +33,7 @@
 @import 'components/samples/_section-scroll-block-sample.scss';
 @import 'components/samples/_send-form-sample.scss';
 
-//layouts
+//layouts -> sections or blocks
 @import 'layouts/_header.scss';
 @import 'layouts/_main-preview.scss';
 @import 'layouts/_about-us.scss';
@@ -49,7 +44,3 @@
 @import 'layouts/_our-blog.scss';
 @import 'layouts/_contact-us.scss';
 @import 'layouts/_footer.scss';
-
-//helpers
-// @import "helpers/_hide.scss";
-@import 'helpers/_border.scss';
