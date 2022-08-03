@@ -1,0 +1,58 @@
+.h1 {
+  @include font-size('xxlarge');
+  line-height: 1.25em;
+  font-weight: 600;
+  color: map-get($colors, 'mine-shaft');
+  @include dark-theme {
+    color: map-get($colors, 'white');
+  }
+}
+
+.h2,
+h2 {
+  @include font-size('xlarge');
+  line-height: 1.25em;
+  font-weight: 500;
+  color: map-get($colors, 'mine-shaft');
+  @include dark-theme {
+    color: map-get($colors, 'white');
+  }
+}
+
+.h3 {
+  @include font-size('xlarge');
+  line-height: 1.25em;
+  font-weight: 500;
+  color: map-get($colors, 'mine-shaft');
+  @include dark-theme {
+    color: map-get($colors, 'white');
+  }
+}
+
+@media (min-width: map-get($breakpoint,'medium')) {
+  .h1 {
+    @include font-size('xxxlarge');
+  }
+
+  .h2,
+  h2 {
+    @include font-size('xxlarge');
+    font-weight: 600;
+  }
+}
+
+@media (min-width: map-get($breakpoint,'large')) {
+  .h1 {
+    @include font-size('huge');
+  }
+
+  .h2,
+  h2 {
+    @include font-size('xxxlarge');
+  }
+
+  .h3 {
+    @include font-size('xxlarge');
+    font-weight: 600;
+  }
+}

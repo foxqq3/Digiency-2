@@ -1,70 +1,69 @@
 .send-form-sample {
+  display: flex;
+  flex-direction: column;
+
+  &__materials-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__forms-contaner {
+    scroll-margin: 40px;
+    margin-top: spacing(12);
+  }
+
+  &__forms-title {
+    margin: 0 spacing(17) 0;
+    text-align: center;
+  }
+
+  &__forms {
     display: flex;
     flex-direction: column;
+    gap: spacing(5);
+    margin-top: spacing(5);
+  }
 
-    &__materials-img {
-        width: 100%;
-        height: auto;
+  &__btn {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: map-get($breakpoint,'medium')) {
+  .send-form-sample {
+    flex-direction: row;
+    align-items: center;
+    &__materials {
+      flex-basis: 40%;
+      margin-top: spacing(18);
     }
 
     &__forms-contaner {
-        margin-top: spacing(12);
+      flex-basis: 60%;
     }
 
     &__forms-title {
-        margin: 0 spacing(17) 0;
-        text-align: center;
+      margin: 0;
+      text-align: left;
     }
 
     &__forms {
-        display: flex;
-        flex-direction: column;
-        gap: spacing(5);
-        margin-top: spacing(5);
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: spacing(5);
     }
+  }
+}
 
+@media (min-width: map-get($breakpoint,'large')) {
+  .send-form-sample {
+    &__forms {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: spacing(5) spacing(3);
+    }
     &__btn {
-        margin-right: auto;
+      margin-top: spacing(2);
     }
-}
-
-@media (min-width: map-get($breakpoint,"medium")) {
-    .send-form-sample {
-        flex-direction: row;
-        align-items: center;
-        &__materials{
-            flex-basis: 40%;
-            margin-top: spacing(18);
-        }
-
-        &__forms-contaner {
-            flex-basis: 60%;
-        }
-
-
-        &__forms-title {
-            margin: 0;
-            text-align: left;
-        }
-
-        &__forms {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: spacing(5);
-        }
-
-    }
-}
-
-@media (min-width: map-get($breakpoint,"large")) {
-    .send-form-sample {
-        &__forms {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: spacing(5) spacing(3);
-        }
-        &__btn {
-            margin-top: spacing(2);
-        }
-    }
+  }
 }
